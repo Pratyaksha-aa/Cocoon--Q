@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocoon - Login & Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1 id="form-title">Welcome to Cocoon</h1>
+      <form id="login-form" class="form">
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <p class="toggle-text">
+          Don't have an account? <span id="show-register" class="link">Register</span>
+        </p>
+      </form>
+
+      <form id="register-form" class="form hidden">
+        <div class="input-group">
+          <label for="register-name">Name</label>
+          <input type="text" id="register-name" placeholder="Enter your name" required>
+        </div>
+        <div class="input-group">
+          <label for="register-email">Email</label>
+          <input type="email" id="register-email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-group">
+          <label for="register-password">Password</label>
+          <input type="password" id="register-password" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <p class="toggle-text">
+          Already have an account? <span id="show-login" class="link">Login</span>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

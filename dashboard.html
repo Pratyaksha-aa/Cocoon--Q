@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Cocoon</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Welcome, <span id="user-name">User</span>!</h1>
+    </header>
+
+    <section id="friend-suggestions">
+      <h2>Friend Suggestions</h2>
+      <ul id="suggestions-list"></ul>
+    </section>
+
+    <section id="chatbot">
+      <h2>Chatbot</h2>
+      <div class="chatbot-container">
+        <div id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Type a message...">
+        <button id="chatbot-send" class="btn">Send</button>
+      </div>
+    </section>
+
+    <section id="existing-friends">
+      <h2>Chat with Friends</h2>
+      <ul id="friend-list">
+        <!-- Friend List -->
+      </ul>
+    </section>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
